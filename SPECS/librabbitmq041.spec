@@ -78,7 +78,7 @@ rm %{buildroot}%{_libdir}/%{_original_name}.la
 
 %files
 %doc AUTHORS README.md THANKS TODO LICENSE-MIT
-%{_libdir}/%{_original_name}.so.4.1.3*
+%{_libdir}/%{_original_name}.so.4*
 
 
 %files devel
