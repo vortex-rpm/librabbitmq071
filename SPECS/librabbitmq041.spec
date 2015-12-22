@@ -67,15 +67,11 @@ make %{_smp_mflags}
 
 %install
 make install  DESTDIR="%{buildroot}"
-
 rm %{buildroot}%{_libdir}/%{_original_name}.la
 
 
-%check
-make check
-
-
 %post -p /sbin/ldconfig
+
 
 %postun -p /sbin/ldconfig
 
